@@ -41,8 +41,8 @@
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(SIZE, SIZE);
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  //renderer.setClearColor(0x000000, 1);              // black for testing
-  renderer.setClearColor(0x000000, 0);            // transparent for production
+  renderer.setClearColor(0x0f0f0f, 1);              // black for testing
+  //renderer.setClearColor(0x000000, 0);            // transparent for production
   document.getElementById('globe-container').appendChild(renderer.domElement);
 
   const globe = new THREE.Group();
